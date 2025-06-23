@@ -21,9 +21,9 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Run main.py with Environment Variables
+      - name: Run main.ipynb with Environment Variables
         env:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_USER: ${{ secrets.DB_USER }}
           DB_HOST: ${{ secrets.DB_HOST }}
-        run: python main.py
+        run: python main.ipynb
